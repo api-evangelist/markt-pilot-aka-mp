@@ -1,8 +1,30 @@
 aid: markt-pilot-aka-mp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/markt-pilot-aka-mp.png
 name: Markt Pilot (aka MP)
-description: Markt Pilot (aka MP) is a company surfaced as a portfolio company of insight-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'MARKT-PILOT GmbH is a German software company (registered in Beilstein,
+  business address Stuttgart, with a US office in Chicago) that provides a unified
+  pricing performance platform for industrial manufacturers. Its flagship product,
+  MP ONE, combines an Intelligence Engine (real-time competitor and market data with
+  AI-powered cross-reference part matching), a Decision Engine (cost-plus, market-based,
+  and attribute-based pricing workflows), and a Performance Engine (portfolio, revenue,
+  and margin analysis with executive dashboards). MARKT-PILOT serves 200+ manufacturers
+  across agriculture, construction and mining, machine tooling, packaging, and industrial
+  equipment, helping them move from static annual spare-parts pricing to dynamic,
+  data-driven pricing. It was surfaced as a portfolio company of Insight Partners.
+  The company operates a marketing site, blog, and a hosted (Better Stack) status
+  page, but publishes no public developer/API surface: no developer portal, API documentation,
+  OpenAPI, well-known discovery endpoints, or client SDKs were found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/markt-pilot-aka-mp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Pricing
+- Pricing Intelligence
+- Spare Parts
+- Manufacturing
+- Industrial Equipment
+- Market Intelligence
+- Aftermarket
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +51,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/markt-pilot-aka-mp-domain-security.yml
 - type: Website
   url: https://www.markt-pilot.com/en/
+- type: Blog
+  url: https://www.markt-pilot.com/en/resources/blog
+- type: Support
+  url: https://www.markt-pilot.com/en/company/contact
+- type: PrivacyPolicy
+  url: https://www.markt-pilot.com/en/privacy-policy
+- type: TermsOfService
+  url: https://www.markt-pilot.com/en/terms-of-use
+- type: GitHubOrganization
+  url: https://github.com/markt-pilot
+- type: StatusPage
+  url: https://status.markt-pilot.com/
+- type: Lifecycle
+  url: lifecycle/markt-pilot-aka-mp-lifecycle.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
